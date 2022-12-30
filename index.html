@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<style>
+	body {
+		margin: 0;
+	}
+
+	.forecast {
+		font-family:    Verdana, SansSerif, serif;
+		height:         100vh;
+		display:        flex;
+		flex-direction: column;
+		align-items:    center;
+	}
+
+	.forecast__wrapper {
+		display:         flex;
+		flex-direction:  column;
+		justify-content: center;
+		align-items:     center;
+		width:           500px;
+	}
+
+	.forecast__form {
+		width: 100%;
+	}
+
+	.forecast__title {
+		font-size:   48px;
+		font-weight: bold;
+		text-align:  center;
+	}
+
+	.forecast__legend {
+		display:       block;
+		font-size:     24px;
+		text-align:    left;
+		margin-bottom: 24px;
+	}
+
+	input {
+		font-size:        14px;
+		padding:          10px;
+		display:          block;
+		border:           0;
+		background-color: #f7f7f7;
+		border-radius:    8px;
+		margin-bottom:    24px;
+	}
+
+	.forecast__input {
+		width:      100%;
+		transition: .3s;
+	}
+
+	.forecast__input:focus-visible {
+		background-color: #e7e7e7;
+		outline: 0;
+	}
+
+	.forecast__button {
+		width:            30%;
+		background-color: #333;
+		color:            #fff;
+		border-radius:    8px;
+		transition:       .3s;
+	}
+
+	.forecast__button:active {
+		background-color: #000;
+		color:            #f7f7f7;
+	}
+</style>
+<body>
+<div class="forecast">
+	<div class="forecast__wrapper">
+		<h1 class="forecast__title">Weather forecast</h1>
+		<form class="forecast__form" onsubmit="submitFunction()">
+			<label class="forecast__legend" for="city">Enter city:</label>
+			<input class="forecast__input" id="city" type="text">
+			<input class="forecast__button"  type="submit" value="Get forecast">
+		</form>
+	</div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
