@@ -1,5 +1,8 @@
 body {
 	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .forecast {
@@ -67,4 +70,15 @@ input {
 .forecast__button:active {
 	background-color: #000;
 	color:            #f7f7f7;
+}
+
+.forecast__current {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+}
+
+.forecast__information {
+	display: flex;
+	justify-content: space-between;
 }
