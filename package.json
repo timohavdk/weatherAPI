@@ -1,0 +1,23 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "weatherapi https://www.weatherapi.com/",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timohavdk/weatherAPI.git"
+  },
+  "author": "Andreev Timofey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timohavdk/weatherAPI/issues"
+  },
+  "homepage": "https://github.com/timohavdk/weatherAPI#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
